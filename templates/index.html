@@ -1,0 +1,12 @@
+{{ extend 'layout.html' }}
+
+{{ block title }}Blog Posts{{ end }}
+
+{{ block content }}
+<h1>Blog Posts</h1>
+<ul>
+  {{ for post in posts: }}
+    <li><a href="/post/{{ =post['filename'] }}">{{ =post['title'] }}</a></li>
+  {{ pass }}
+</ul>
+{{ end }}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+</head>
+<body>
+    <header>
+        <a href="/">Home</a>
+            <span>Welcome, {{ =current.session.get("Decision") }}</span>
+            <a href="/auth/logout">Logout</a>
+
+            <a href="/auth/login">Login with GitHub</a>
+    </header>
+</body>
+</html>
